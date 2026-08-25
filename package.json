@@ -1,0 +1,24 @@
+{
+  "name": "yongtech",
+  "version": "1.0.0",
+  "description": "A creative workshop for turning imagination into real experiences.",
+  "homepage": "https://github.com/WilksonPedro/yongtech#readme",
+  "bugs": {
+    "url": "https://github.com/WilksonPedro/yongtech/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilksonPedro/yongtech.git"
+  },
+  "license": "MIT",
+  "author": "Wilkson Silva",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
