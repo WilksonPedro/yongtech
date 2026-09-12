@@ -181,14 +181,14 @@ Por enquanto, o foco está em construir uma fundação técnica sólida e usar o
 
 A versão pública atual pode ser acessada em:
 
-➡️ [yongtech.vercel.app](https://yongtech.vercel.app)
+➡️ [yongtech](https://yongtech.com.br)
 
 ---
 
 ## 👤 Autor
 
-**Wilkson Pedro**
+**Wilkson**
 
 Analista de TI direcionando sua carreira para desenvolvimento de software e construindo sua formação através de estudo, prática e projetos próprios.
 
-[GitHub](https://github.com/WilksonPedro) · [LinkedIn](https://www.linkedin.com/in/wilkson-dev-front-end/)
+[LinkedIn](https://www.linkedin.com/in/wilkson-dev-front-end/)
