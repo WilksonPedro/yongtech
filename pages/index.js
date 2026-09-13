@@ -3,7 +3,7 @@ function Home() {
     <>
       <main>
         <section className="opening">
-          <h1>YongTech</h1>
+          <h1>YONGTECH</h1>
         </section>
         <section className="hero">
           <p>Bem vindo a YongTech! Pagina em construção.</p>
@@ -26,5 +26,4 @@ function Home() {
     </>
   );
 }
-
 export default Home;
