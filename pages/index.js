@@ -2,15 +2,15 @@ function Home() {
   return (
     <>
       <main>
-        <header>
+        <section className="opening">
           <h1>YongTech</h1>
-        </header>
-        <p>Welcome to YongTech page in construction</p>
-        <section>
+        </section>
+        <section className="hero">
+          <p>Bem vindo a YongTech! Pagina em construção.</p>
           <div>
             <img
-              src="../images/landing/yongtech-construction-hero.png"
-              alt="Hero image"
+              src="/images/landing/yongtech-construction-hero.png"
+              alt="Ilustração de um jovem de costas diante de uma interface tecnomágica, acompanhado por um gato."
             />
           </div>
           <div>
@@ -22,7 +22,7 @@ function Home() {
           </div>
         </section>
       </main>
-      <footer>© 2026 Yongtech. All rights reserved.</footer>
+      <footer>© 2026 Yongtech. Todos os diretos reservados.</footer>
     </>
   );
 }
