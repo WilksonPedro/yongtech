@@ -52,8 +52,39 @@ body {
   margin: 1rem auto 0;
 }
 
+.transition {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  width: min(70%, 40rem);
+  margin: clamp(2rem, 5vw, 4rem) auto;
+}
+
+.transition::before,
+.transition::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--accent-color);
+}
+
+.transition__sigil {
+  color: var(--accent-color);
+  font-size: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+}
+
 .hero img {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 2rem;
 }

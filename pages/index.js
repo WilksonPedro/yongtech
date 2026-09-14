@@ -5,24 +5,32 @@ function Home() {
         <section className="opening">
           <h1>YONGTECH</h1>
         </section>
-        <section className="hero">
-          <p>Bem vindo a YongTech! Pagina em construção.</p>
-          <div>
+
+        <div className="transition" aria-hidden="true">
+          <span className="transition__sigil">✦</span>
+        </div>
+
+        <section className="hero" aria-labelledby="hero-title">
+          <div className="hero__content">
+            <p className="hero__eyebrow">Forjando a Yongtech</p>
+            <h2 id="hero-title">
+              Transformando imaginação em experiências vivas.
+            </h2>
+
+            <p>
+              A YongTech está em construção: um espaço para criar projetos,
+              experiências digitais e mundos com identidade própria.
+            </p>
+          </div>
+          <div className="hero-visual">
             <img
-              src="/images/landing/yongtech-construction-hero.png"
+              src="/images/landing/yongtech-construction-hero-full.png"
               alt="Ilustração de um jovem de costas diante de uma interface tecnomágica, acompanhado por um gato."
             />
           </div>
-          <div>
-            <p>
-              Transformando <strong>imaginação</strong> em experiências{" "}
-              <strong>vivas</strong>. Um laboratório onde código, mundos, jogos
-              e ideias começam a ganhar forma.
-            </p>
-          </div>
         </section>
       </main>
-      <footer>© 2026 Yongtech. Todos os diretos reservados.</footer>
+      <footer>© 2026 Yongtech. Todos os direitos reservados.</footer>
     </>
   );
 }
