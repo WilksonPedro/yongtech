@@ -39,8 +39,21 @@ body {
   font-size: clamp(2.5rem, 15vw, 14rem);
   letter-spacing: 0.04em;
   font-weight: 400;
-  color: var(--arcane-claro);
-  text-shadow: var(--arcane-principal) 0px 0px 8px;
+  line-height: 1;
+  background: linear-gradient(
+    165deg,
+    #d6ad72 0%,
+    #f0dfc5 25%,
+    #e9dff2 42%,
+    #a879d6 72%,
+    #6d3aa8 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow:
+    0 -1px 8px rgba(214, 168, 74, 0.16),
+    0 2px 8px rgba(124, 58, 237, 0.22);
 }
 
 .opening h1::after {
