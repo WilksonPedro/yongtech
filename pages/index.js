@@ -22,7 +22,7 @@ function Home() {
               experiências digitais e mundos com identidade própria.
             </p>
           </div>
-          <div className="hero-visual">
+          <div className="hero__visual">
             <img
               src="/images/landing/yongtech-construction-hero-full.png"
               alt="Ilustração de um jovem de costas diante de uma interface tecnomágica, acompanhado por um gato."

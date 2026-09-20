@@ -88,16 +88,25 @@ body {
 }
 
 .hero {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 2rem;
-  align-items: center;
+  gap: 4rem;
+  margin: 6rem auto;
+  max-width: 100rem;
+  padding: 0 2rem;
+}
+
+.hero__content {
+  flex: 1;
+}
+
+.hero__visual {
+  flex: 1.5;
 }
 
 .hero img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 2rem;
 }
