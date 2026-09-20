@@ -14,16 +14,25 @@ A regra que orienta o desenvolvimento é simples:
 
 ## 🚧 Estado do projeto
 
-A Yongtech ainda está em uma fase inicial de desenvolvimento.
+A Yongtech ainda está em uma fase inicial de desenvolvimento e está sendo construída de forma incremental.
 
 Atualmente, o repositório já possui:
 
 - aplicação web com Next.js e React;
 - desenvolvimento em JavaScript;
+- landing page pública responsiva e acessível;
+- identidade visual inicial da Yongtech;
 - ambiente Node.js versionado com `.nvmrc`;
+- banco de dados PostgreSQL para desenvolvimento local;
+- serviços locais executados com Docker Compose;
+- módulo inicial de acesso ao banco de dados;
+- endpoint `/api/v1/status`;
+- estrutura inicial de testes com Jest;
+- primeiro teste de integração da API;
+- configuração de caminhos com `jsconfig.json`;
 - configuração com EditorConfig;
 - formatação de código com Prettier;
-- scripts para verificar e corrigir formatação;
+- scripts para desenvolvimento, serviços, testes e formatação;
 - documentação do projeto em `docs/`;
 - acompanhamento da evolução por meio de Issues e commits;
 - deploy público da aplicação.
@@ -34,19 +43,36 @@ Neste momento, o objetivo não é apresentar um produto concluído, mas construi
 
 ## 🛠️ Tecnologias atuais
 
+### Aplicação
+
 - JavaScript
-- Next.js
 - React
+- Next.js
+- CSS
+
+### Backend e dados
+
 - Node.js
+- PostgreSQL
+- `node-postgres` (`pg`)
+
+### Desenvolvimento e infraestrutura
+
+- Docker
+- Docker Compose
 - npm
 - Git
 - GitHub
-- EditorConfig
+
+### Qualidade e testes
+
+- Jest
 - Prettier
+- EditorConfig
 
 O ambiente do projeto utiliza **Node.js 24**.
 
-Novas tecnologias devem entrar no projeto quando houver uma necessidade que justifique sua adoção.
+Novas tecnologias devem entrar no projeto quando houver uma necessidade real que justifique sua adoção.
 
 ---
 
@@ -54,8 +80,12 @@ Novas tecnologias devem entrar no projeto quando houver uma necessidade que just
 
 ### Pré-requisitos
 
+Para executar o projeto atualmente são necessários:
+
 - Node.js 24
 - npm
+- Docker
+- Docker Compose
 
 Clone o repositório:
 
@@ -65,7 +95,8 @@ git clone https://github.com/WilksonPedro/yongtech.git
 
 Entre no diretório:
 
-```bash
+```
+bash
 cd yongtech
 ```
 
@@ -97,15 +128,19 @@ http://localhost:3000
 
 ## 🧹 Formatação
 
+O projeto utiliza Prettier para manter uma formatação consistente no código.
+
 Para verificar a formatação dos arquivos:
 
-```bash
+```
+bash
 npm run lint:check
 ```
 
 Para aplicar a formatação:
 
-```bash
+```
+bash
 npm run lint:fix
 ```
 
@@ -138,16 +173,18 @@ O histórico do repositório também deve registrar o processo de aprendizagem, 
 
 Entre as áreas planejadas para a evolução do projeto estão:
 
-- organização e arquitetura da aplicação;
-- testes automatizados;
+- evolução da arquitetura da aplicação;
+- ampliação da cobertura de testes automatizados;
+- evolução da API;
+- evolução da integração com PostgreSQL;
+- migrations de banco de dados;
+- validação e tratamento de erros;
 - linting de código;
-- banco de dados;
-- migrations;
 - ambientes de desenvolvimento, homologação e produção;
 - integração contínua;
 - evolução da interface e do conteúdo público da Yongtech.
 
-Esses itens representam **direções de desenvolvimento**, não funcionalidades já implementadas.
+Esses itens representam **direções de desenvolvimento**, não funcionalidades necessariamente prontas ou com implementação definida.
 
 As tarefas concretas e seu estado atual podem ser acompanhados nas:
 
