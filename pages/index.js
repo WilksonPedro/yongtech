@@ -1,11 +1,25 @@
+import Head from "next/head";
+
 function Home() {
   return (
     <>
-      <main>
-        <section className="opening">
-          <h1>YONGTECH</h1>
-        </section>
+      <Head>
+        <title>Yongtech — imaginação em experiências digitais</title>
+        <meta
+          name="description"
+          content="A Yongtech é uma oficina em construção para criar projetos, experiências digitais e mundos com identidade própria."
+        />
+      </Head>
 
+      <a className="skip-link" href="#conteudo-principal">
+        Ir para o conteúdo principal
+      </a>
+
+      <header className="opening">
+        <h1>Yongtech</h1>
+      </header>
+
+      <main id="conteudo-principal">
         <div className="transition" aria-hidden="true">
           <span className="transition__sigil">✦</span>
         </div>
@@ -18,19 +32,39 @@ function Home() {
             </h2>
 
             <p>
-              A YongTech está em construção: um espaço para criar projetos,
+              A Yongtech está em construção: um espaço para criar projetos,
               experiências digitais e mundos com identidade própria.
             </p>
           </div>
-          <div className="hero__visual">
+          <figure className="hero__visual">
             <img
               src="/images/landing/yongtech-construction-hero-full.png"
-              alt="Ilustração de um jovem de costas diante de uma interface tecnomágica, acompanhado por um gato."
+              alt="Jovem de costas diante de uma interface tecnomágica, acompanhado por um gato."
             />
-          </div>
+          </figure>
         </section>
       </main>
-      <footer>© 2026 Yongtech. Todos os direitos reservados.</footer>
+      <footer className="site-footer">
+        <div className="site-footer__inner">
+          <div className="site-footer__top">
+            <div className="site-footer__brand">
+              <span className="site-footer__wordmark">Yongtech</span>
+              <p>Uma oficina para transformar imaginação em experiências.</p>
+            </div>
+            <nav className="site-footer__nav" aria-label="Links da Yongtech">
+              <a href="https://github.com/WilksonPedro/yongtech">GitHub</a>
+              <a href="https://www.linkedin.com/in/wilkson-dev-front-end/">
+                LinkedIn
+              </a>
+              <a href="#conteudo-principal">Voltar ao conteúdo</a>
+            </nav>
+          </div>
+          <div className="site-footer__bottom">
+            <span>© 2026 Yongtech. Todos os direitos reservados.</span>
+            <span>Feito com curiosidade e imaginação.</span>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
