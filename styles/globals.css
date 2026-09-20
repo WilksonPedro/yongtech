@@ -16,6 +16,7 @@
   --accent-color: #d6a84a;
 
   --font-display: "Cinzel", serif;
+  --font-editorial: "Cormorant Garamond", serif;
   --font-body:
     system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -68,7 +69,7 @@ body {
 .transition {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 
   width: min(70%, 40rem);
   margin: clamp(2rem, 5vw, 4rem) auto;
@@ -88,25 +89,151 @@ body {
 }
 
 .hero {
-  align-items: center;
   display: flex;
-  flex-direction: row;
-  gap: 4rem;
-  margin: 6rem auto;
-  max-width: 100rem;
-  padding: 0 2rem;
+  align-items: center;
+
+  max-width: 92rem;
+  margin: 3rem auto 7rem;
+  padding: 4rem 2rem;
+
+  gap: clamp(3rem, 6vw, 7rem);
 }
 
 .hero__content {
   flex: 1;
 }
 
-.hero__visual {
-  flex: 1.5;
+.hero__eyebrow {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  margin-bottom: 1rem;
 }
 
-.hero img {
-  max-width: 100%;
+.hero__content h2 {
+  font-family: var(--font-editorial);
+  font-size: clamp(3rem, 4.5vw, 5rem);
+  font-weight: 400;
+  line-height: 0.95;
+
+  color: #f0dfc5;
+
+  max-width: 14ch;
+}
+.hero__content h2 + p {
+  color: var(--text-secondary);
+
+  max-width: 42ch;
+
+  margin-top: 1.5rem;
+
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
+  line-height: 1.7;
+}
+
+.hero__visual {
+  position: relative;
+
+  flex: 1.75;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  isolation: isolate;
+}
+
+/* Aura atrás da imagem */
+
+.hero__visual::before {
+  content: "";
+
+  position: absolute;
+
+  width: 88%;
+  aspect-ratio: 1;
+
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(124, 58, 237, 0.3) 0%,
+    rgba(124, 58, 237, 0.2) 34%,
+    rgba(109, 58, 168, 0.13) 55%,
+    rgba(214, 168, 74, 0.05) 68%,
+    transparent 100%
+  );
+
+  filter: blur(16px);
+  transform: scale(0.2);
+
+  z-index: 0;
+}
+
+/* Segunda camada de névoa para quebrar o círculo perfeito */
+
+.hero__visual::after {
+  content: "";
+
+  position: absolute;
+
+  width: 105%;
+  aspect-ratio: 1;
+
+  background: radial-gradient(
+    ellipse at center,
+    transparent 15%,
+    rgba(124, 58, 237, 0.07) 62%,
+    transparent 68%
+  );
+
+  filter: blur(2px);
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero__visual img {
+  position: relative;
+  border-radius: 45%;
+  z-index: 1;
+
+  width: min(100%, 36rem);
   height: auto;
+
   display: block;
+
+  /*
+   * Centro totalmente visível.
+   * Bordas começam a desaparecer progressivamente.
+   */
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    #000 0%,
+    #000 55%,
+    rgba(0, 0, 0, 0.96) 63%,
+    rgba(0, 0, 0, 0.8) 72%,
+    rgba(0, 0, 0, 0.52) 81%,
+    rgba(0, 0, 0, 0.2) 90%,
+    transparent 100%
+  );
+
+  mask-image: radial-gradient(
+    ellipse at center,
+    #000 0%,
+    #000 55%,
+    rgba(0, 0, 0, 0.96) 63%,
+    rgba(0, 0, 0, 0.8) 72%,
+    rgba(0, 0, 0, 0.52) 81%,
+    rgba(0, 0, 0, 0.2) 90%,
+    transparent 100%
+  );
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }
