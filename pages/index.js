@@ -35,7 +35,14 @@ function Home() {
               A Yongtech está em construção: um espaço para criar projetos,
               experiências digitais e mundos com identidade própria.
             </p>
+
+            <p className="hero__presentation">
+              <span className="hero__identity">Wilkson Silva</span>{" "}
+              <strong>Desenvolvedor full stack júnior</strong> · construindo
+              esta oficina com Next.js, Node.js e PostgreSQL.
+            </p>
           </div>
+
           <figure className="hero__visual">
             <img
               src="/images/landing/yongtech-construction-hero-full.png"
@@ -53,7 +60,7 @@ function Home() {
             </div>
             <nav className="site-footer__nav" aria-label="Links da Yongtech">
               <a href="https://github.com/WilksonPedro/yongtech">GitHub</a>
-              <a href="https://www.linkedin.com/in/wilkson-dev-front-end/">
+              <a href="https://www.linkedin.com/in/wilkson-software-engineer/">
                 LinkedIn
               </a>
               <a href="#conteudo-principal">Voltar ao conteúdo</a>

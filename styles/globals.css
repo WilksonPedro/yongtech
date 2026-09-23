@@ -148,8 +148,28 @@ body {
 
   margin-top: 1.5rem;
 
-  font-size: clamp(0.95rem, 1vw, 1.1rem);
+  font-size: clamp(0.95rem, 1vw, 1.5rem);
   line-height: 1.7;
+}
+
+.hero__presentation {
+  max-width: 42ch;
+  font-family: var(--font-editorial);
+  font-size: clamp(0.95rem, 2vw, 1.5rem);
+  margin: 1.5rem 0;
+  line-height: 1.2;
+  color: var(--text-secondary);
+}
+
+.hero__presentation strong {
+  color: var(--text-color);
+}
+
+.hero__identity {
+  font-family: var(--font-display);
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  display: block;
 }
 
 .hero__visual {
@@ -366,6 +386,15 @@ body {
   .hero__content h2 + p {
     font-size: 1rem;
     margin-inline: auto;
+  }
+
+  .hero__presentation {
+    text-align: center;
+    margin-inline: auto;
+    font-size: 1.2rem;
+  }
+  .hero__identity {
+    display: block;
   }
 
   .site-footer__top,
