@@ -4,7 +4,7 @@
 
 A **Yongtech** é minha presença pessoal na web e, ao mesmo tempo, um laboratório público de desenvolvimento de software.
 
-O projeto está sendo construído de forma incremental enquanto aprofundo minha formação em engenharia de software. Em vez de reproduzir mecanicamente projetos de cursos ou adicionar ferramentas apenas para aumentar a stack, procuro usar cada etapa para resolver uma necessidade real da aplicação.
+O projeto está sendo construído de forma incremental enquanto aprofundo minha formação em engenharia de software. A base técnica (estrutura de API, conexão com o banco e testes) foi construída acompanhando o curso.dev, e a partir dela a Yongtech segue com identidade, interface e decisões próprias. Em vez de adicionar ferramentas apenas para aumentar a stack, procuro usar cada etapa para resolver uma necessidade real da aplicação.
 
 A regra que orienta o desenvolvimento é simples:
 
