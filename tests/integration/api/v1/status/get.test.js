@@ -14,5 +14,5 @@ test("GET to /api/v1/status returns database status informations", async () => {
   expect(maxConnections).toEqual(expect.any(Number));
   expect(maxConnections).toBeGreaterThan(0);
   expect(connectionsUsed).toEqual(expect.any(Number));
-  expect(connectionsUsed).toBeGreaterThan(0);
+  expect(connectionsUsed).toEqual(1);
 });
